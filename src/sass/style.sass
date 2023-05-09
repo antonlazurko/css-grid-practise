@@ -1,39 +1,29 @@
 .container
     background-color: grey
     width: 1000px
-    height: 1500px
     margin: 0 auto
     display: grid
-    grid-template-columns: repeat(2, 200px)
-    grid-template-rows: repeat(2, 150px)
-    grid-auto-columns: 400px
-    grid-gap: 30px
-    align-content: space-evenly
-    justify-content: space-evenly
-    grid-auto-flow: dense
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+    grid-template-rows: repeat(2, minmax(150px, max-content))
+    width: 90%
 .item
     padding: 20px
     font-size: 30px
     font-family: sans-serif
     color: white
-    background-color: red
     &-1
-        // grid-row-start: 2
-        // grid-row-end: 3
-        // grid-column-start: 2
-        // grid-column-end: 3
-        //same
-        // grid-row: 2 / 3
-        // grid-column: 2 / 3
-        //same
-        // grid-area: 2 / 2 / 3 / 3
+        background-color: red
     &-2
+        background-color: green
     &-3
-        // grid-column: 1 / 3
-        // align-self: stretch
-        // justify-self: stretch
+        background-color: yellow
     &-4
+        background-color: blue
     &-5
-        grid-column: 2 / 3
+        background-color: orange
     &-6
-        grid-column: 1 / 3
+        background-color: brown
+    &-7
+        background-color: tomato
+    &-8
+        background-color: black
